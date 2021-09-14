@@ -12,7 +12,8 @@ const raisedToTheThird = (arr) => {
 //array
   let array =[];
   arr.forEach(element => {
-    array.push( Math.pow(element, 3));
+    let leen = Math.pow(element, 3);
+    array.push( leen);
   });
   return array;
 };

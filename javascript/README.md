@@ -85,7 +85,6 @@ From the `data-structures-and-algorithms/javascript` folder, execute the followi
 Note that when you check your code into GitHub, all of your tests will automatically execute. These results should match your own, and will be found on the  **Actions** tab
 
 
-------------
 
 # data-structures-and-algorithms
 ----------
@@ -93,8 +92,7 @@ Note that when you check your code into GitHub, all of your tests will automatic
 
 [Reverse-Array/code challenge 1](../javascript/code-challenges/array-reverse/README.md)
 
-------------------
+
 
 [array-insert-shift/code challenge 2](../javascript/code-challenges/array-insert-shift/README.md)
 
--------------

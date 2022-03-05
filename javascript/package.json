@@ -4,8 +4,9 @@
   "description": "Data Structures, Algorithms, Code Challenges",
   "main": "index.js",
   "scripts": {
-    "get-challenge": "`which bash` ./code-challenges/bin/get-challenge.sh",
+    "start": "node ll.js",
     "test": "jest --verbose --coverage",
+    "watch": "jest --verbose --coverage --watchAll",
     "lint": "eslint '**/*.js'"
   },
   "author": "",

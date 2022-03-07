@@ -96,3 +96,6 @@ Note that when you check your code into GitHub, all of your tests will automatic
 
 [array-insert-shift/code challenge 2](../javascript/code-challenges/array-insert-shift/README.md)
 
+
+[linked-list-insertions](../javascript/linked-list/README.md)
+

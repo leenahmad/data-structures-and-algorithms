@@ -174,4 +174,61 @@ describe('insertions', () => {
     let newValue = ll.toString();
     expect(newValue).toEqual('{ 3 }->{ 2 }->{ 1 }->{ 10 }->NULL');
   });
+
+});
+
+describe('k' , () => {
+  it('Where k is greater than the length of the linked list', () => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+
+    let value = ll.kth(1);
+    expect(value).toEqual(1);
+  });
+
+  it('Where k and the length of the list are the same', () => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+
+    let value = ll.kth(3);
+    expect(value).toEqual(3);
+  });
+
+  it('Where k is not a positive integer', () => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+
+    let value = ll.kth(-1);
+    expect(value).toEqual('change number because can\'t be less than 0 or 0');
+  });
+
+  it('Where the linked list is of a size 1', () => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+
+    let value = ll.kth(4);
+    expect(value).toEqual('change number because can\'t be higher than length of list');
+  });
+
+  it('Happy Path', () => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+    ll.insert(4);
+    ll.insert(5);
+
+    let value = ll.kth(2);
+
+    expect(value).toEqual(2);
+  });
+
 });

@@ -125,6 +125,27 @@ class LinkedList {
 
   }
 
+  //kth
+  kth(num) {
+    if (num <= 0) {
+      return 'change number because can\'t be less than 0 or 0';
+    }
+    let value = this.head;
+    let count = 1;
+    while (value.next) {
+      value = value.next;
+      count++;
+    }
+    value = this.head;
+    let finalCount = count - num;
+    if (finalCount <= -1) {
+      return 'change number because can\'t be higher than length of list';
+    }
+    for (let i = 0; i < finalCount; i++) {
+      value = value.next;
+    }
+    return value.value;
+  }
 }
 
 

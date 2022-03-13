@@ -6,6 +6,9 @@ const { describe, it } = require('eslint/lib/rule-tester/rule-tester');
 
 const LinkedLilst = require('../index');
 
+// const linkedListZip = require('../index');
+
+
 describe('test Linked List', () => {
 
   it('works', () => {
@@ -231,4 +234,22 @@ describe('k' , () => {
     expect(value).toEqual(2);
   });
 
+});
+
+describe('linked-list-zip' , () => {
+  it('should return a merged list', () => {
+    let list1 = new LinkedLilst();
+    list1.insert(1);
+    list1.insert(2);
+    list1.insert(3);
+
+    let list2 = new LinkedLilst();
+    list2.insert('A');
+    list2.insert('B');
+    list2.insert('C');
+
+    let list3 = new LinkedLilst();
+
+    expect(list3.linkedListZip(list1,list2)).toEqual('{ 3 }->{ C }->{ 2 }->{ B }->{ 1 }->{ A }->NULL');
+  });
 });

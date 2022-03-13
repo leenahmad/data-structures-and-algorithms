@@ -72,3 +72,13 @@ the kth method to Return the node’s value that is k places from the tail of th
 ```
 
 ![image](./image/code%20challenge7.PNG)
+
+
+--------------------------------------------
+
+# code challenge 8 linked-list-zip
+
+create method called linkedListZip 
+
+
+![image](./image/challenge8.PNG)

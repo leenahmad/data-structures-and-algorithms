@@ -146,6 +146,31 @@ class LinkedList {
     }
     return value.value;
   }
+
+  // //linked-list-zip
+  linkedListZip(list1, list2) {
+
+    const newLl = new LinkedList();
+
+    let head1 = list1.head;
+
+    let head2 = list2.head;
+
+    while (head1 || head2) {
+      if (head1) {
+        newLl.append(head1.value);
+        head1 = head1.next;
+      }
+      if (head2) {
+        newLl.append(head2.value);
+        head2 = head2.next;
+      }
+    }
+    return newLl.toString();
+  }
+
+
+
 }
 
 

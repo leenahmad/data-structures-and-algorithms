@@ -17,6 +17,9 @@ class QueueP {
     return this.stack1.top;
 
   }
+  //dequeue
+  //Arguments: none
+  //Extracts a value from the PseudoQueue, using a first-in, first-out approach.h
 
   dequeue(){
     while(this.stack1.top){

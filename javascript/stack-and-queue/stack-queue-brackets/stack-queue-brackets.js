@@ -3,19 +3,19 @@
 function validatebrackets (string){
 
   let arr = [];
-  let brackets = {
-    ')' : '(',
-    '}' : '{',
-    ']' : '['
+  let brackets = '[]{}()';
 
-  };
+  for (let char of string){
+    let index = brackets.indexOf(char);
+    if(index === -1){
+      continue;
 
-  for (const char of string){
-    if(!brackets[char]){
-      arr.push(char);
-
-    }else if (arr.pop() !== brackets[char]){
-      return false;
+    }
+    if (index % 2 === 0){
+      arr.push(index +1);
+    }else {
+      if(arr.pop() !== index)
+        return false;
     }
   }
   return arr.length ===0;

@@ -48,5 +48,16 @@ describe('Brackets',()=>{
 
     expect(string).toBe(false);
   });
+  it('test stackBrackets with a string 👍', () => {
+    let stackBrackets =  brackets('{}{Code}[Fellows](())');
+
+    expect(stackBrackets).toBe(true);
+  });
+
+  it('test stackBrackets with a string 👍', () => {
+    let stackBrackets =  brackets('{}((leen))');
+
+    expect(stackBrackets).toBe(true);
+  });
 
 });

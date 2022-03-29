@@ -42,6 +42,28 @@ class binary{
     traverse(this.root);
     return result;
   }
+
+  maximumTree(){
+    if(!this.root){
+      return 'empty';
+    }
+    let maxValue = this.root.value;
+    let recursive = (node) => {
+      if(node.left){
+        recursive(node.left);
+      }
+      if(node.right){
+        recursive(node.right);
+      }
+      if(node.value > maxValue){
+        maxValue = node.value;
+      }
+    };
+
+    recursive(this.root);
+    return maxValue;
+
+  }
 }
 
 module.exports=binary;

@@ -64,3 +64,20 @@ Write the following method for the Binary Tree class
 # whiteboard 
 
 ![max-tree](./imageWhiteBoard/challenge16.PNG)
+
+
+------------------------
+
+# code challenge 17
+
+## tree-breadth-first
+
++ Write a function called breadth first
+
++ Arguments: tree
+
++ Return: list of all values in the tree, in the order they were encountered
+
+# whiteboard 
+
+![tree-breadth-first](./imageWhiteBoard/codechallenge17.PNG)

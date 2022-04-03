@@ -1,7 +1,9 @@
 'use strict';
 
-const BinaryTree = require('../BinaryTree');
-const Node = require('../Node');
+const breadthfirst = require('../tree-breadth-first');
+const BinaryTree = require('../../BinaryTree');
+const Node = require('../../Node');
+
 let tree = null;
 
 describe('Binary Tree Test', ()=>{
@@ -56,17 +58,9 @@ describe('Binary Tree Test', ()=>{
     expect(postOrder).toEqual(expectedOutput);
   });
 
-  it('maximum value stored in the tree' , () => {
-    let max = tree.maximumTree();
-
-    expect(max).toEqual(9);
-  });
-
-  it('empty' , () => {
-    tree = new BinaryTree;
-
-    expect(tree.maximumTree()).toEqual('empty');
-
+  it('test breadth first' , () => {
+    let expected = [1, 2, 3, 6, 4, 5, 7, 8, 9];
+    expect(breadthfirst(tree)).toEqual(expected);
   });
 
 });

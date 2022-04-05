@@ -81,3 +81,19 @@ Write the following method for the Binary Tree class
 # whiteboard 
 
 ![tree-breadth-first](./imageWhiteBoard/codechallenge17.PNG)
+
+-------------------
+
+# code challenge 18
+
+# fizzBuzzTree 
+
++ Write a function called fizz buzz tree
+
++ Arguments: k-ary tree
+
++ Return: new k-ary tree
+
+# whiteboard 
+
+![fizzbuzztree](./imageWhiteBoard/challenge18.PNG)

@@ -99,3 +99,7 @@ Note that when you check your code into GitHub, all of your tests will automatic
 
 [linked-list-insertions](../javascript/linked-list/README.md)
 
+[trees](../javascript/trees/README.MD)
+
+[sort](../javascript/Sort/README.md)
+

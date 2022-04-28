@@ -1,6 +1,6 @@
-# Code Challenge 26
+# Code Challenge 72
 
-## Insertion Sort
+## merge Sort
 
 -------------------
 

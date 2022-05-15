@@ -50,7 +50,7 @@
 
 # whiteboard  
 
-![hashtables](./images/test30.PNG)
+![hashtables](./images/codechallenge30.PNG)
 
 # tests
 

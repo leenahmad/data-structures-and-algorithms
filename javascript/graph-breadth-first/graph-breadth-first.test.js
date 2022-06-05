@@ -5,6 +5,7 @@ const Graph = require('./graph-breadth-first');
 const Vertex = require('../graph/vertex');
 
 
+
 describe('test graph-breadth-first', () => {
   it('Return: A collection of nodes in the order they were visited.', () => {
     const graph = new Graph();
@@ -87,6 +88,27 @@ describe('test graph-breadth-first', () => {
 
   });
 
+
+  it('depth-first', ()=>{
+    const graph = new Graph();
+    graph.addNode('A');
+    graph.addNode('B');
+    graph.addNode('C');
+    graph.addNode('D');
+    graph.addNode('D');
+    graph.addNode('E');
+    graph.addNode('H');
+    graph.addNode('F');
+
+    graph.addEdge('A', 'B');
+    graph.addEdge('A', 'C');
+    graph.addEdge('A','F');
+    graph.addEdge('B', 'D');
+    graph.addEdge('D','H');
+    graph.addEdge('C', 'E');
+    graph.addEdge('F', 'E');
+    expect(graph.depthFirst('A')).toEqual(['A', 'B', 'D','H', 'C', 'E','F']);
+  });
 
 
 });

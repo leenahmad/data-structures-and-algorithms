@@ -75,6 +75,26 @@ class Graph {
 
   }
 
+  depthFirst(vertex){
+    let result = [];
+    let visited = {};
+    let current = vertex;
+    const depthFirst=(current, visited, result)=>{
+      if(!visited[current]){
+        visited[current] = true;
+        result.push(current);
+        let neighbors = this.getNeighbors(current);
+        for(let i=0; i<neighbors.length; i++){
+          depthFirst(neighbors[i].vertex, visited, result);
+        }
+      }
+    };
+    depthFirst(current, visited, result);
+    return result;
+  }
 }
+
+
+
 
 module.exports = Graph;
